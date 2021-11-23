@@ -11,8 +11,8 @@
    - duration: 시뮬레이션 시간 [seconds]
 3. datagen.bat 실행
 	- 이 bat 파일과 같은 폴더에 다음 두 파일이 함께 있어야 함
-     1. 'osm.net.xml' (지도 파일)
-     2. 'xml2csv.py' (parsing script) 
+       1. osm.net.xml (지도 파일)
+       2. xml2csv.py (parsing script) 
 4. mobility_data.csv(결과 파일) 확인
 
 ## Grid, spider 등 기본 제공 topology 기반
