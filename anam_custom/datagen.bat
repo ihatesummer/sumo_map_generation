@@ -1,6 +1,6 @@
 @echo off
-set nVehicle=100
-set duration=3600
+set nVehicle=10
+set duration=600
 randomTrips.py -n osm.net.xml -o flows.xml --begin 0 --end 1 --period 1 --flows %nVehicle%
 jtrrouter --route-files=flows.xml --net-file=osm.net.xml --output-file=osm.rou.xml --begin 0 --end %duration% --accept-all-destinations
 generateContinuousRerouters.py -n osm.net.xml --end %duration% -o rerouter.add.xml
