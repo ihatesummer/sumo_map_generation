@@ -1,0 +1,14 @@
+<configuration> 
+    <input> 
+        <net-file value="spider.net.xml"/> 
+        <route-files value="spider.rou.xml"/> 
+        <additional-files value="rerouter.add.xml"/> 
+    </input> 
+    <time> 
+        <begin value="0"/> 
+        <end value="600"/> 
+    </time> 
+    <output> 
+        <fcd-output value="spider.output.xml"/> 
+    </output> 
+</configuration> 
