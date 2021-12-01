@@ -1,7 +1,7 @@
 @echo off
 set nVehicle=10
 set duration=600
-netgenerate --spider --spider.arm-number=7 --spider.circle-number=3 --spider.space-radius=100 --output-file=spider.net.xml
+netgenerate --spider --spider.arm-number=12 --spider.circle-number=2 --spider.space-radius=100 --output-file=spider.net.xml
 randomTrips.py -n spider.net.xml -o flows.xml --begin 0 --end 1 --period 1 --flows %nVehicle%
 jtrrouter --route-files=flows.xml --net-file=spider.net.xml --output-file=spider.rou.xml --begin 0 --end %duration% --accept-all-destinations
 generateContinuousRerouters.py -n spider.net.xml --end %duration% -o rerouter.add.xml
