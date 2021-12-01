@@ -17,5 +17,6 @@
 
 ## Grid, spider 등 기본 제공 topology 기반
 - 각 폴더에 그에 상응하는 datagen.bat을 생성해둠
+  - [bat파일 내부의 명령어들 설명 문서](https://ihatemushroom.notion.site/CLI-simulation-f88197baa65d4e90abfcd4d489070658)
 - 변수 선언 바로 밑에 osmWebWizard을 대신하는 netgenerate 명령(도로 생성 command line)을 넣어 둠
   - 구체적인 사용법은 [netgenerate API 문서](https://sumo.dlr.de/docs/netgenerate.html) 활용
